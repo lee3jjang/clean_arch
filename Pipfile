@@ -8,6 +8,7 @@ graphene = "*"
 flask = "*"
 python-dotenv = "*"
 pydantic = "*"
+psycopg2-binary = "*"
 flask-graphql = "*"
 
 [dev-packages]

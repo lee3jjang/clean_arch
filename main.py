@@ -18,9 +18,12 @@ app.add_url_rule(
 
 def initialize() -> None:
     from dp.settings import REPOSITORIES
-    from dp.domain.person.repository import PersonInMemoryRepository
+    from dp.domain.person.repository import PersonDatabaseRepository
 
-    REPOSITORIES["person_repository"] = PersonInMemoryRepository()
+    # from dp.domain.person.repository import PersonInMemoryRepository
+
+    # REPOSITORIES["person_repository"] = PersonInMemoryRepository()
+    REPOSITORIES["person_repository"] = PersonDatabaseRepository()
 
 
 if __name__ == "__main__":
