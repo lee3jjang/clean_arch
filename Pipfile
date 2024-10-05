@@ -6,9 +6,10 @@ name = "pypi"
 [packages]
 graphene = "*"
 flask = "*"
-python-dotenv = "*"
 pydantic = "*"
 psycopg2-binary = "*"
+sqlalchemy = "*"
+python-dotenv = "*"
 flask-graphql = "*"
 
 [dev-packages]

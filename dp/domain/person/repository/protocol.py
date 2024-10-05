@@ -1,0 +1,16 @@
+from typing import Protocol
+
+from dp.domain.person.model import Person
+from dp.domain.person.dto import PersonDto
+
+
+class PersonRepositoryProtocol(Protocol):
+    def list_person(self) -> list[Person]: ...
+
+    def create_person(self, person_dto: PersonDto) -> Person: ...
+
+    def get_person(self, person_id: str) -> Person: ...
+
+    def edit_person(self, person_id: str, person_dto: PersonDto) -> None: ...
+
+    def delete_person(self, person_id: str) -> None: ...
